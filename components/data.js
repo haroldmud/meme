@@ -1,0 +1,1 @@
+export default ["image1.webp","image2.jpg","image3.jpg","memeimg.png","image4.jpg","image5.jpg"];
