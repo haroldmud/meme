@@ -4,7 +4,7 @@ export default function Meme(props){
   return(<>
     <div className="relative memeimg">
       <div className="flex justify-center mt-12">
-        <img className="w-[85%] h-[400px] object-fill" src={`assets/images/${props.meme}`} alt="the meme" />
+        <img className="w-[85%] h-[300px] object-fill" src={`${props.meme}`} alt="the meme" />
       </div>
       
       <div className="absolute top-6 w-full ">
