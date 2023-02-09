@@ -13,6 +13,7 @@ export default function Home() {
   const [second,setSecond]=useState("");
   const [info, setInfo] = useState(["SHUT UP","TAKE MY MONEY"]);
   const [id, setId]=useState(0);
+  const regex = /^\s*$/;
 
   useEffect(()=>{
     fetch("https://api.imgflip.com/get_memes")
@@ -35,7 +36,7 @@ export default function Home() {
               submition={(e)=>{
                 e.preventDefault(); setInfo([first,second]); setFirst(""); setSecond(""); 
                 setId(Math.floor(Math.random()*100));
-                if(first=="" || second==""){
+                if(first=="" || second=="" || regex.test(first) || regex.test(second) ){
                   alert("please fill the inputs");
                   setInfo(["That can only"," mean one thing"]);
                   setId(0);
