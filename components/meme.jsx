@@ -8,7 +8,7 @@ export default function Meme(props){
       </div>
       
       <div className="absolute top-6 w-full ">
-        <div className="flex flex-col lg:gap-[12rem] md:[8rem] gap-[5rem] font-[1000] text-white text-[25px] md:text-[35px]">
+        <div className="flex flex-col lg:gap-[12rem] md:[8rem] gap-[4rem] font-[1000] text-white text-[25px] md:text-[35px]">
           <p className="memetext text-center [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">{props.firstMeme}</p>
           <p className="memetext text-center">{props.secondMeme}</p>
         </div>
