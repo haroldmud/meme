@@ -1,4 +1,4 @@
-export default function Form({first, firstValue}){
+export default function Form(props){
     
 
     return(
