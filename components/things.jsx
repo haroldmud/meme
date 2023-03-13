@@ -11,7 +11,7 @@ export default function Things(){
     <form action="">
       <div className="flex justify-center gap-4 mt-4">
         <input value={input} onChange={(e)=> setInput(e.target.value)} className="border-2 rounded-xl p-2 outline-none" type="text" />
-        <button onClick={(e)=> {e.preventDefault(); setItem((current)=>[...current, `${input}`]);setInput("")}} className="bg-cyan-500 px-4 rounded-xl font-bold hover:bg-cyan-600">ADD</button>
+        <button onClick={(e)=> {e.preventDefault(); setItem((current)=>[...current, {input}]);setInput("")}} className="bg-cyan-500 px-4 rounded-xl font-bold hover:bg-cyan-600">ADD</button>
       </div>
     </form>
       <ul>
