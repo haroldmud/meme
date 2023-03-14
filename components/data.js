@@ -1,0 +1,20 @@
+export default [
+  {
+    name:"image1.webp"
+  },
+  {
+    name:"image2.jpg"
+  },
+  {
+    name:"image3.jpg"
+  },
+  {
+  name:"memeimg.png"
+  },
+  {
+    name:"image4.jpg"
+  },
+  {
+    name:"image5.jpg"
+  }
+];
